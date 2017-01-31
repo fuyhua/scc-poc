@@ -1,0 +1,31 @@
+<person>
+  <firstName>John</firstName>
+  <lastName>Smith</lastName>
+  <isAlive>true</isAlive>
+  <age>25</age>
+  <address>
+    <streetAddress>21 2nd Street</streetAddress>
+    <city>New York</city>
+    <state>NY</state>
+    <postalCode>10021-3100</postalCode>
+  </address>
+  <phoneNumbers>
+    <phoneNumber>
+      <type>home</type>
+      <number>212 555-1234</number>
+    </phoneNumber>
+    <phoneNumber>
+      <type>office</type>
+      <number>646 555-4567</number>
+    </phoneNumber>
+    <phoneNumber>
+      <type>mobile</type>
+      <number>123 456-7890</number>
+    </phoneNumber>
+  </phoneNumbers>
+  <gender>
+    <type>male</type>
+  </gender>
+  <children />
+  <spouse></spouse>
+</person>
