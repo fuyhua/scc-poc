@@ -13,14 +13,28 @@
     <phoneNumber>
       <type>home</type>
       <number>212 555-1234</number>
+      <extensions>
+      	<extension>
+	      	<ext>1111</ext>
+	    </extension>
+      	<extension>
+	      	<ext>2222</ext>
+	    </extension>
+      </extensions>
     </phoneNumber>
     <phoneNumber>
       <type>office</type>
       <number>646 555-4567</number>
+      <extensions />
     </phoneNumber>
     <phoneNumber>
       <type>mobile</type>
       <number>123 456-7890</number>
+      <extensions>
+      	<extension>
+	      	<ext>7777</ext>
+	    </extension>
+      </extensions>
     </phoneNumber>
   </phoneNumbers>
   <gender>

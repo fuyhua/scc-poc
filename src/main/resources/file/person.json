@@ -16,11 +16,27 @@
     },
     {
       "type": "office",
-      "number": "646 555-4567"
+      "number": "646 555-4567",
+      "extensions": [
+        {
+      	  "ext": "1111"
+      	},
+        {
+      	  "ext": "3333"
+      	},
+        {
+      	  "ext": "2222"
+      	}
+      ],
     },
     {
       "type": "mobile",
       "number": "123 456-7890"
+      "extensions": [
+        {
+      	  "ext": "7777"
+      	}
+      ],
     }
   ],
   "gender": {

@@ -18,7 +18,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-contract-dependencies</artifactId>
-				<version>1.1.0.BUILD-SNAPSHOT</version>
+				<version>1.0.4.BUILD-SNAPSHOT</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -33,7 +33,7 @@
 			<plugin>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-contract-maven-plugin</artifactId>
-				<version>1.1.0.BUILD-SNAPSHOT</version>
+				<version>1.0.4.BUILD-SNAPSHOT</version>
 				<extensions>true</extensions>
 				<configuration>
 					<baseClassForTests>com.example.test.PersonControllerBase</baseClassForTests>

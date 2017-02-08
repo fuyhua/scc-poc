@@ -21,6 +21,11 @@ org.springframework.cloud.contract.spec.Contract.make {
 				[
 					"type": "home",
 					"number": "999 999-9999",
+					"extensions": [
+						[
+							"ext": "5555",
+						]
+					]
 				]
 			],
 			"gender": [
@@ -40,15 +45,21 @@ org.springframework.cloud.contract.spec.Contract.make {
 			//jsonPath('$.age', byType())		// can we do this if we have custom validation above?
 			jsonPath('$.address.postalCode', byRegex("[0-9]{5}(-[0-9]{4})?"))
 			jsonPath('$.phoneNumbers', byType {
-				minOccurrence(0)				// min occurrence of 1
-				maxOccurrence(4)				// max occurrence of 3
+				minOccurrence(1)				// min occurrence of 1
+				maxOccurrence(3)				// max occurrence of 3
 			})
-			//jsonPath('$.phoneNumbers[*].number', byRegex("[0-9]{3} [0-9]{3}-[0-9]{4}"))
+			jsonPath('$.phoneNumbers[*].type', byRegex("home|office|mobile"))
+			jsonPath('$.phoneNumbers[*].number', byRegex("[0-9]{3} [0-9]{3}-[0-9]{4}"))
 			//jsonPath('$..number', byRegex("[0-9]{3} [0-9]{3}-[0-9]{4}"))
+			jsonPath('$.phoneNumbers[*].extensions', byType {
+				minOccurrence(0)				// min occurrence of 0
+				maxOccurrence(2)				// max occurrence of 2
+			})
+			jsonPath('$.phoneNumbers[*].extensions[*].ext', byRegex("[0-9]{4}"))
 			jsonPath('$.gender.type', byRegex("male|female"))
 			jsonPath('$.children', byType {
-				minOccurrence(-1)				// min occurrence of 0
-				maxOccurrence(21)				// max occurrence of 20
+				minOccurrence(0)				// min occurrence of 0
+				maxOccurrence(20)				// max occurrence of 20
 			})
 		}
 		
